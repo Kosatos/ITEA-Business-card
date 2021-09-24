@@ -1,107 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUZYKA</title>
-    <style>
-        h1, h2, h3 {
-            font-style: normal;
-        }
-        span {
-            font-weight: bold;
-        }
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MUZYKA</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Stick+No+Bills:wght@800&display=swap" rel="stylesheet">
 
-    </style>
-</head>
-<body>
-    <div>
-        <header>
-            <p>Константин Музыка</p>
-            <ul>
-                <li>Опыт работы</li>
-                <li>Достижения</li>
-                <li>Сильные стороны</li>
-                <li>Личное</li>
-                <li>Контакты</li>
-            </ul>
-        </header>
-        <div>
-            <img src="" alt="Портрет">
-            <p>Выпускник Университета путей сообщения. Работаю по&nbsp;специальности в&nbsp;проектном институте. Интересуюсь сферой&nbsp;IT, так как вижу её&nbsp;и&nbsp;перспектиыность и&nbsp;хочу желаю сферу деятельности.</p>
-        </div> 
-        <h1>Из инженера-проектировщика в frontend-разработчика</h1>
-    </div>
-    <hr>
-    <main>
-        <div>
-            <h2>Опыт работы</h2>
-            <ul>
-                <li><span>Январь 2021 — по настоящее время:
-                    </span> инженер-проектировщик в
-                    ООО "НеваТрансПроект"</li>
-            </ul>
-        </div>
-        <hr>
-        <div>
-            <h2>Мои самые большие достижения</h2>
-            <p>Главные профессиональные достижения за последние годы:</p>
-            <ul>
-                <li>
-                    <img src="" alt="Галочка">
-                    <h3>Повышение по работе</h3>
-                    <p>Повышение на первой работе с должности техника до инженера.</p>
-                </li>
-                <li>
-                    <img src="" alt="Галочка">
-                    <h3>Участие в строительстве Крымского моста</h3>
-                    <p>Строительство Крымского моста в составе студенческого отряда.</p>
-                </li>
-                <li>
-                    <img src="" alt="Галочка">
-                    <h3>Решение полностью сменить сферу деятельности</h3>
-                    <p>Осознание незаинтересованности в свой специальности и поиск своего дела.</p>
-                </li>
-            </ul>
-        </div>
-        <hr>
-        <div>
-            <h2>Мои сильные стороны</h2>
-            <ul>
-                <li>усидчивый</li>
-                <li>стрессоустойчивый</li>
-                <li>коммуникабельный</li>
-                <li>душа компании</li>
-                <li>настойчивый</li>
-                <li>пью и не пьянею</li>
-            </ul>
-        </div>
-        <hr>
-        <div>
-            <h2>Мой принцип работы</h2>
-            <p>Делай так, чтобы рвало колонки</p>
-        </div>
-        <hr>
-        <div>
-            <h2>Немного о личном:</h2>
-            <p>Я обычный питерский бродяга, люблю выпить с друзьями, попеть песни у костра под гитару, заводить новые знакомства, путешествовать.</p>
-            <div>
-                <img src="" alt="1">
-                <img src="" alt="2">
-                <img src="" alt="3">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<nav class="nav">
+					<p class="nav-logo">Konstantin Muzyka</p>
+					<ul class="nav-list">
+						<li class="nav-item">Опыт работы</li>
+						<li class="nav-item">Достижения</li>
+						<li class="nav-item">Сильные стороны</li>
+						<li class="nav-item">Личное</li>
+						<li class="nav-item">Контакты</li>
+					</ul>
+				</nav>
+				<div class="hero">
+					<img
+						class="portrait"
+						src="img/photo_2021-09-24_02-07-45.jpg"
+						alt="Портрет"
+					/>
+					<p class="hero-text">
+						Выпускник Университета путей сообщения. Работаю
+						по&nbsp;специальности в&nbsp;проектном институте.
+						Интересуюсь сферой&nbsp;IT, так как вижу
+						её&nbsp;перспективность и&nbsp;желаю сменить сферу
+						деятельности.
+					</p>
+					<h1 class="hero-title">
+						Из инженера-проектировщика в frontend-разработчика
+					</h1>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div>
+					<h2 class="main-title">Опыт работы</h2>
+					<ul class="expirience-list">
+						<li class="expirience-item">
+							<span class="expirience-period">Январь 2021 — по настоящее время:</span>
+							инженер-проектировщик в ООО "НеваТрансПроект"
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h2 class="main-title">Мои самые большие достижения</h2>
+					<p class="achievements-text">
+						Главные профессиональные достижения за последние годы:
+					</p>
+					<ul class="achievements-list">
+						<li class="achievements-item">
+							<img class="achievements-img" src="img/icon-ok.png" alt="Галочка" />
+							<div class="achievements-content">
+								<h3 class="achievements-title">Повышение по работе</h3>
+								<p>
+									Повышение на первой работе с должности техника
+									до инженера.
+								</p>
+							</div>
+						</li>
+						<li class="achievements-item">
+							<img class="achievements-img" src="img/icon-ok.png" alt="Галочка" />
+							<div class="achievements-content">
+								<h3 class="achievements-title">Участие в строительстве Крымского моста</h3>
+								<p>
+									Строительство Крымского моста в составе
+									студенческого отряда.
+								</p>
+							</div>
+						</li>
+						<li class="achievements-item">
+							<img class="achievements-img" src="img/icon-ok.png" alt="Галочка" />
+							<div class="achievements-content">
+								<h3 class="achievements-title">
+									Решение полностью сменить сферу деятельности
+								</h3>
+								<p>
+									Осознание незаинтересованности в свой
+									специальности и поиск своего дела.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h2 class="main-title">Мои сильные стороны</h2>
+					<ul class="strengths-list">
+						<li class="strengths-item">
+							<img class="strength-img" src="img/icon-ok-2.png" alt="Галочка">
+							<span class="strength-text">усидчивый</span>
+						</li>
+						<li class="strengths-item">
+							<img class="strength-img" src="img/icon-ok-2.png" alt="Галочка">
+							<span class="strength-text">стрессоустойчивый</span>
+						</li>
+						<li class="strengths-item">
+							<img class="strength-img" src="img/icon-ok-2.png" alt="Галочка">
+							<span class="strength-text">коммуникабельный</span>
+						</li>
+						<li class="strengths-item">
+							<img class="strength-img" src="img/icon-ok-2.png" alt="Галочка">
+							<span class="strength-text">душа компании</span>
+						</li>
+						<li class="strengths-item">
+							<img class="strength-img" src="img/icon-ok-2.png" alt="Галочка">
+							<span class="strength-text">настойчивый</span>
+						</li>
+						<li class="strengths-item">
+							<img class="strength-img" src="img/icon-ok-2.png" alt="Галочка">
+							<span class="strength-text">пью и пьянею</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="principal">
+				<div class="container">
+					<h2 class="main-title principal-title">Мой принцип работы</h2>
+					<p class="principle-text">&laquo;Делай так, чтобы рвало колонки&raquo;</p>
+				</div>
+			</div>
+			<div class="container">
+				<div>
+					<h2 class="main-title">Немного о личном:</h2>
+					<p class="private-text">
+						Я обычный питерский бродяга, люблю выпить с друзьями,
+						попеть песни у костра под гитару, заводить новые
+						знакомства, путешествовать. Люблю играть в Dota 2.
+					</p>
+					<div class="private-images">
+						<img class="private-image" src="img/dota-2-iphone-5-iphone-8-apple-iphone-7-plus-apple-thumbnail.jpg" alt="1" />
+						<img class="private-image" src="img/clip-art-cartoon-illustration-pinkie-pie-rainbow-dash-phoenix-dota-2-thumbnail.jpg" alt="2" />
+						<img class="private-image" src="img/protective-gear-in-sports-character-design-thumbnail.jpg" alt="3" />
+					</div>
+				</div>
+			</div>
+		</main>
+		<address class="address">
+            <div class="container">
+                <h2 class="main-title">Контакт</h2>
+                <form class="contact-form" action="">
+                    <input class="contact-input" type="text" placeholder="Ф.И.О." />
+                    <input class="contact-input" type="email" placeholder="E-mail"/>
+                    <input class="contact-message" type="text" placeholder="Сообщение"/>
+                    <button class="contact-btn">Отправить</button>
+                </form>
             </div>
-        </div>
-    </main>
-    <hr>
-    <address>
-        <h2>Контакт</h2>
-        <form action="">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <button></button>
-        </form>
-    </address>
-</body>
+		</address>
+	</body>
 </html>
