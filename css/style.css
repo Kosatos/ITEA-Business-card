@@ -16,6 +16,7 @@ a {
 	color: inherit;
   	font-family: inherit;
  	text-decoration: none;
+     cursor: pointer;
 }
 
 li {
@@ -157,7 +158,7 @@ address {
 }
 
 .principal {
-    background-image: url(/img/1614259755_5-p-fon-les-cherno-belii-6.jpg);
+    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1619310275_1-phonoteka_org-p-fon-cherno-belii-gorod-1.jpg);
     background-size: cover;
     color: #fff;
 }
@@ -200,13 +201,13 @@ address {
     padding: 15px;
     margin-bottom: 15px;
 }
+
 .contact-message {
     border: 3px solid #e34400;
     width: 100%;
     height: 240px;
     padding: 15px;
     margin-bottom: 15px;
-    vertical-align: top;
 }
 
 .contact-btn {
@@ -223,6 +224,8 @@ address {
     margin-left: auto;
     cursor: pointer;
 }
+
+
 
 
 
