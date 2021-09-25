@@ -213,6 +213,8 @@ address {
     margin-bottom: 15px;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .contact-btn {
