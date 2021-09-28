@@ -29,8 +29,8 @@ address {
 
 .header {
     width: 100%;
-    background-color: #1f1f1f;
-}
+    background-color:#000;
+    }
 
 .container {
     width: 960px;
@@ -48,35 +48,74 @@ address {
 .nav-logo {
     font-family: 'Stick No Bills', sans-serif;
     font-size: 30px;
-    color: #e34400;
+    color:  #1cbbff;
     width: 50px;
     text-transform: uppercase;
 }
 
 .nav-list {
     display: flex;
-    color: #e34400;
+    color: #1cbbff;
     font-size: 16px;
 }
 
 .nav-item {
-    margin-left: 35px;
+    margin-left: 40px;
+}
+
+.nav-link {
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 3px;
+    transition: all .2s ease;
+    opacity: 0.8;
+}
+
+.nav-link:hover {
+    padding-bottom: 2px;
+    border-bottom: 3px solid #fff;
+    opacity: 1;
+}
+
+.nav-link:active {
+    border-bottom: 1px solid #fff;
 }
 
 .hero {
     
 }
 
-.portrait {
+.hero-bio {
+    position: relative;
+    z-index: 0;
+    background-image: url(../img/photo_2021-09-24_02-07-45.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.hero-bio::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
 }
 
 .hero-text {
     color: #fff;
-    margin-top: 30px;
-    margin-left: 30px;
     width: 700px;
     line-height: 1.6em;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    z-index: 2;
 }
 
 .hero-title {
@@ -185,55 +224,115 @@ address {
     border-radius: 100%;
     margin-left: 15px;
     padding-right: 15px;
+    object-fit: cover;
 }
 
 .contact-form {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: flex-end;
     margin-bottom: 20px;
 }
 
 .contact-input {
-    border: 3px solid #e34400;
+    border: 3px solid #1cbbff;
     width: 100%;
     height: 80px;
     padding: 15px;
     margin-bottom: 15px;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
+    outline: none;
+    border-radius: 5px;
 }
 
 .contact-textarea {
-    border: 3px solid #e34400;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 3px solid #1cbbff;
     width: 100%;
     height: 240px;
     padding: 15px;
     margin-bottom: 15px;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
 }
 
 .contact-btn {
     width: 300px;
     height: 60px;
-    background-color: #e34400; 
+    background-color: #1cbbff; 
     color: #fff;
     font-size: 20px;
     text-transform: uppercase; 
     font-weight: 700;
     border: none;  
     border-radius: 5px;
-    margin-left: auto;
     cursor: pointer;
+    line-height: 1em;
+    transition: all .3s ease;
+}
+
+.contact-btn:hover {
+    opacity: 0.8;
+}
+
+.contact-btn:active {
+    border: 3px solid #1cbbff;
+    background-color: #fff;
+    color: #1cbbff;
+}
+
+.gototop {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 10%;
+    bottom: 20px;
+    border-radius: 5px;
+    background-color: #1cbbff;
+    z-index: 3;
+    transition: all .3s ease;
+}
+
+.gototop:hover {
+    opacity: 0.8;
+}
+
+.gototop:active {
+    border: 3px solid #1cbbff;
+    background-color: #fff;
+    fill: #1cbbff;
+}
+
+.gototop-btn {
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
 
+.arrow-top-3 {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transform: rotate(270deg);
+    fill: #fff;
+    stroke-width: 5px;
+    transition: all .3s ease;
+    z-index: 4;
+}
 
-
+.arrow-top-3:active {
+    fill: #1cbbff;
+}
 
 
 

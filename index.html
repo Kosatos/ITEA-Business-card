@@ -14,32 +14,27 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<nav class="nav">
+				<nav class="nav" id="navigation">
 					<p class="nav-logo">Konstantin Muzyka</p>
 					<ul class="nav-list">
 						<li class="nav-item">
-							<a href="#">Опыт работы</a>
+							<a class="nav-link" href="#experience">Опыт работы</a>
 						</li>
 						<li class="nav-item">
-							<a href="#">Достижения</a>
+							<a class="nav-link" href="#achievements">Достижения</a>
 						</li>
 						<li class="nav-item">
-							<a href="#">Сильные стороны</a>
+							<a class="nav-link" href="#strengths">Сильные стороны</a>
 						</li>
 						<li class="nav-item">
-							<a href="#">Личное</a>
+							<a class="nav-link" href="#private">Личное</a>
 						</li>
 						<li class="nav-item">
-							<a href="#">Контакты</a>
+							<a class="nav-link" href="#contacts">Контакты</a>
 						</li>
 					</ul>
 				</nav>
-				<div class="hero">
-					<img
-						class="portrait"
-						src="img/photo_2021-09-24_02-07-45.jpg"
-						alt="Портрет"
-					/>
+				<div class="hero-bio">
 					<p class="hero-text">
 						Выпускник Университета путей сообщения. Работаю
 						по&nbsp;специальности в&nbsp;проектном институте.
@@ -47,15 +42,15 @@
 						её&nbsp;перспективность и&nbsp;желаю сменить сферу
 						деятельности.
 					</p>
-					<h1 class="hero-title">
-						Из инженера-проектировщика в frontend-разработчика
-					</h1>
-				</div>
+				</div>	
+				<h1 class="hero-title">
+					Из инженера-проектировщика в frontend-разработчика
+				</h1>
 			</div>
 		</header>
 		<main class="main">
 			<div class="container">
-				<div>
+				<div id="expirience">
 					<h2 class="main-title">Опыт работы</h2>
 					<ul class="expirience-list">
 						<li class="expirience-item">
@@ -64,7 +59,7 @@
 						</li>
 					</ul>
 				</div>
-				<div>
+				<div id="achievements">
 					<h2 class="main-title">Мои самые большие достижения</h2>
 					<p class="achievements-text">
 						Главные профессиональные достижения за последние годы:
@@ -104,7 +99,7 @@
 						</li>
 					</ul>
 				</div>
-				<div>
+				<div id="strengths">
 					<h2 class="main-title">Мои сильные стороны</h2>
 					<ul class="strengths-list">
 						<li class="strengths-item">
@@ -141,7 +136,7 @@
 				</div>
 			</div>
 			<div class="container">
-				<div>
+				<div id="private">
 					<h2 class="main-title">Немного о личном:</h2>
 					<p class="private-text">
 						Я обычный питерский бродяга, люблю выпить с друзьями,
@@ -149,9 +144,9 @@
 						знакомства, путешествовать. Люблю играть в Dota 2.
 					</p>
 					<div class="private-images">
-						<img class="private-image" src="https://img3.goodfon.ru/original/1440x900/e/6d/parizh-doroga-dvizhenie.jpg" alt="1" />
-						<img class="private-image" src="https://get.pxhere.com/photo/black-and-white-architecture-white-skyline-city-skyscraper-cityscape-downtown-black-monochrome-tower-block-shape-metropolis-urban-area-monochrome-photography-atmosphere-of-earth-41836.jpg" alt="2" />
-						<img class="private-image" src="https://get.pxhere.com/photo/black-and-white-skyline-photography-city-skyscraper-cityscape-downtown-monochrome-metropolis-neighbourhood-aerial-photography-urban-area-monochrome-photography-residential-area-human-settlement-metropolitan-area-92736.jpg" alt="3" />
+						<img class="private-image" src="img/photo_2021-08-05_14-48-39.jpg" alt="2" />
+						<img class="private-image" src="img/photo_2021-08-05_14-48-38.jpg" alt="1" />
+						<img class="private-image" src="img/photo_2021-08-05_14-48-35.jpg" alt="3" />
 					</div>
 				</div>
 			</div>
@@ -159,13 +154,20 @@
 		<address class="address">
             <div class="container">
                 <h2 class="main-title">Контакт</h2>
-                <form class="contact-form" action="">
-                    <input class="input contact-input" type="text" placeholder="Ф.И.О." />
-                    <input class="input contact-input" type="email" placeholder="E-mail"/>
-                    <textarea class="contact-textarea" placeholder="Сообщение"/></textarea>
-                    <button class="contact-btn">Отправить</button>
+                <form class="contact-form" id="contacts" action="/">
+                    <input class="contact-input" type="text" name="FIO" placeholder="Ф.И.О." />
+                    <input class="contact-input" name="email" type="email" placeholder="E-mail"/>
+                    <textarea class="contact-textarea" name="message" placeholder="Сообщение"/></textarea>
+                    <button type="submit" class="contact-btn">Отправить</button>
                 </form>
             </div>
 		</address>
+		<div class="gototop">		
+			<a class="gototop-btn" href="#navigation">
+				<svg class="arrow-top-3" viewBox="0 0 5 9">
+					<path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+				</svg>
+			</a>
+		</div>
 	</body>
 </html>
